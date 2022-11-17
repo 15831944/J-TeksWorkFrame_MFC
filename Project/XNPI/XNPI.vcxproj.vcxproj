@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ECEB9D1F-639F-477E-85DD-42CBDFF547D5}</ProjectGuid>
+    <RootNamespace>XNPI</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>XNPI</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)D32</TargetName>
+    <IncludePath>$(SolutionDir)\Inc;C:\Program Files %28x86%29\Matrox Imaging\MIL\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Inc;C:\Program Files %28x86%29\Matrox Imaging\MIL\LIB;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Runtime\bin\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)D64</TargetName>
+    <IncludePath>$(SolutionDir)\Inc;C:\Program Files\Matrox Imaging\MIL\Include;C:\Program Files %28x86%29\Euresys\MultiCam\Include;C:\ViVIX.T_SDK\SDK\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Runtime\bin\</OutDir>
+    <LibraryPath>$(SolutionDir)\Lib;C:\Program Files\Matrox Imaging\MIL\LIB;C:\Program Files %28x86%29\Euresys\MultiCam\Lib\amd64;C:\ViVIX.T_SDK\SDK\lib\x64;$(LibraryPath)</LibraryPath>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)\Inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)\Inc;C:\Program Files\Matrox Imaging\MIL\Include;C:\Program Files %28x86%29\Euresys\MultiCam\Include;C:\ViVIX.T_SDK\SDK\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Lib;C:\Program Files\Matrox Imaging\MIL\LIB;C:\Program Files %28x86%29\Euresys\MultiCam\Lib\amd64;C:\ViVIX.T_SDK\SDK\lib\x64;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Runtime\bin\</OutDir>
+    <TargetName>$(ProjectName)64</TargetName>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>mil.lib;milblob.lib;milIm.lib;milmod.lib;milcal.lib;tiff.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>mil.lib;milblob.lib;milIm.lib;milmod.lib;milcal.lib;milmeas.lib;tiff.lib;gdiplus.lib;ViVIX.T_SDK.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>mil.lib;milblob.lib;milIm.lib;milmod.lib;milcal.lib;milmeas.lib;tiff.lib;gdiplus.lib;ViVIX.T_SDK.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlgoDialog.h" />
+    <ClInclude Include="AlgorithmBase.h" />
+    <ClInclude Include="Broadcaster.h" />
+    <ClInclude Include="CamDlg.h" />
+    <ClInclude Include="CamPart.h" />
+    <ClInclude Include="Compo.h" />
+    <ClInclude Include="CompoTracker.h" />
+    <ClInclude Include="ComSetDlg.h" />
+    <ClInclude Include="ConnectSocket.h" />
+    <ClInclude Include="Defines.h" />
+    <ClInclude Include="DetailInfoDlg.h" />
+    <ClInclude Include="DetailPropDlg.h" />
+    <ClInclude Include="EnvSettingDlg.h" />
+    <ClInclude Include="Frame.h" />
+    <ClInclude Include="GraphDlg.h" />
+    <ClInclude Include="HistoHandle.h" />
+    <ClInclude Include="HistoLevellingDlg.h" />
+    <ClInclude Include="Inspection.h" />
+    <ClInclude Include="LineEquation.h" />
+    <ClInclude Include="listports.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MessageWnd.h" />
+    <ClInclude Include="Modbus.h" />
+    <ClInclude Include="ModBusClient.h" />
+    <ClInclude Include="ModbusManager.h" />
+    <ClInclude Include="ModelBase.h" />
+    <ClInclude Include="ModelData.h" />
+    <ClInclude Include="ModelFile.h" />
+    <ClInclude Include="Module.h" />
+    <ClInclude Include="Monitoring.h" />
+    <ClInclude Include="NumEdit.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="OpenModelDataDlg.h" />
+    <ClInclude Include="OpPanelDlg.h" />
+    <ClInclude Include="ParamsInterface.h" />
+    <ClInclude Include="PartBase.h" />
+    <ClInclude Include="PlotLiveChart.h" />
+    <ClInclude Include="RenameModelDataDlg.h" />
+    <ClInclude Include="Repository.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SaveModelDataDlg.h" />
+    <ClInclude Include="SCAlgoBase.h" />
+    <ClInclude Include="SCAlgoDialog.h" />
+    <ClInclude Include="SCAlignAlgo.h" />
+    <ClInclude Include="SCAlignParamDlg.h" />
+    <ClInclude Include="SCButton.h" />
+    <ClInclude Include="SCClientSocket.h" />
+    <ClInclude Include="SCFidAlgo.h" />
+    <ClInclude Include="SCFidParamDlg.h" />
+    <ClInclude Include="SCGapGageAlgo.h" />
+    <ClInclude Include="SCGapGageParamDlg.h" />
+    <ClInclude Include="SCGroupBox.h" />
+    <ClInclude Include="SCHEdgeDetAlgo.h" />
+    <ClInclude Include="SCHEdgeDetParamDlg.h" />
+    <ClInclude Include="SCHeightAlgo.h" />
+    <ClInclude Include="SCHeightParamDlg.h" />
+    <ClInclude Include="SCListenSocket.h" />
+    <ClInclude Include="SCProcessCtrl.h" />
+    <ClInclude Include="SCResult.h" />
+    <ClInclude Include="SCSockThread.h" />
+    <ClInclude Include="SnapshotDlg.h" />
+    <ClInclude Include="SplashScreenEx.h" />
+    <ClInclude Include="Status.h" />
+    <ClInclude Include="StatusPanelDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TabDetailLogDlg.h" />
+    <ClInclude Include="TabDetailResultDlg.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TeachingDlg.h" />
+    <ClInclude Include="TiffTagManager.h" />
+    <ClInclude Include="ToolPanelDlg.h" />
+    <ClInclude Include="XNPI.h" />
+    <ClInclude Include="XNPIDoc.h" />
+    <ClInclude Include="XNPIView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AlgoDialog.cpp" />
+    <ClCompile Include="AlgorithmBase.cpp" />
+    <ClCompile Include="Broadcaster.cpp" />
+    <ClCompile Include="CamDlg.cpp" />
+    <ClCompile Include="CamPart.cpp" />
+    <ClCompile Include="Compo.cpp" />
+    <ClCompile Include="CompoTracker.cpp" />
+    <ClCompile Include="ComSetDlg.cpp" />
+    <ClCompile Include="ConnectSocket.cpp" />
+    <ClCompile Include="DetailInfoDlg.cpp" />
+    <ClCompile Include="DetailPropDlg.cpp" />
+    <ClCompile Include="EnvSettingDlg.cpp" />
+    <ClCompile Include="Frame.cpp" />
+    <ClCompile Include="GraphDlg.cpp" />
+    <ClCompile Include="HistoHandle.cpp" />
+    <ClCompile Include="HistoLevellingDlg.cpp" />
+    <ClCompile Include="Inspection.cpp" />
+    <ClCompile Include="LineEquation.cpp" />
+    <ClCompile Include="listports.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MessageWnd.cpp" />
+    <ClCompile Include="Modbus.cpp" />
+    <ClCompile Include="ModBusClient.cpp" />
+    <ClCompile Include="ModbusManager.cpp" />
+    <ClCompile Include="ModelBase.cpp" />
+    <ClCompile Include="ModelData.cpp" />
+    <ClCompile Include="ModelFile.cpp" />
+    <ClCompile Include="Module.cpp" />
+    <ClCompile Include="Monitoring.cpp" />
+    <ClCompile Include="NumEdit.cpp" />
+    <ClCompile Include="Observer.cpp" />
+    <ClCompile Include="OpenModelDataDlg.cpp" />
+    <ClCompile Include="OpPanelDlg.cpp" />
+    <ClCompile Include="ParamsInterface.cpp" />
+    <ClCompile Include="PartBase.cpp" />
+    <ClCompile Include="PlotLiveChart.cpp" />
+    <ClCompile Include="RenameModelDataDlg.cpp" />
+    <ClCompile Include="Repository.cpp" />
+    <ClCompile Include="SaveModelDataDlg.cpp" />
+    <ClCompile Include="SCAlgoBase.cpp" />
+    <ClCompile Include="SCAlgoDialog.cpp" />
+    <ClCompile Include="SCAlignAlgo.cpp" />
+    <ClCompile Include="SCAlignParamDlg.cpp" />
+    <ClCompile Include="SCButton.cpp" />
+    <ClCompile Include="SCClientSocket.cpp" />
+    <ClCompile Include="SCFidAlgo.cpp" />
+    <ClCompile Include="SCFidParamDlg.cpp" />
+    <ClCompile Include="SCGapGageAlgo.cpp" />
+    <ClCompile Include="SCGapGageParamDlg.cpp" />
+    <ClCompile Include="SCGroupBox.cpp" />
+    <ClCompile Include="SCHEdgeDetAlgo.cpp" />
+    <ClCompile Include="SCHEdgeDetParamDlg.cpp" />
+    <ClCompile Include="SCHeightAlgo.cpp" />
+    <ClCompile Include="SCHeightParamDlg.cpp" />
+    <ClCompile Include="SCListenSocket.cpp" />
+    <ClCompile Include="SCProcessCtrl.cpp" />
+    <ClCompile Include="SCResult.cpp" />
+    <ClCompile Include="SCSockThread.cpp" />
+    <ClCompile Include="SnapshotDlg.cpp" />
+    <ClCompile Include="SplashScreenEx.cpp" />
+    <ClCompile Include="Status.cpp" />
+    <ClCompile Include="StatusPanelDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TabDetailLogDlg.cpp" />
+    <ClCompile Include="TabDetailResultDlg.cpp" />
+    <ClCompile Include="TeachingDlg.cpp" />
+    <ClCompile Include="TiffTagManager.cpp" />
+    <ClCompile Include="ToolPanelDlg.cpp" />
+    <ClCompile Include="XNPI.cpp" />
+    <ClCompile Include="XNPIDoc.cpp" />
+    <ClCompile Include="XNPIView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmain.bmp" />
+    <Image Include="res\Documents.ico" />
+    <Image Include="res\greenButton.bmp" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\LedOff.ico" />
+    <Image Include="res\LedOn.ico" />
+    <Image Include="res\LodingLogo.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\XNPI.ico" />
+    <Image Include="res\XNPIDoc.ico" />
+    <Image Include="res\XFMS.ico" />
+    <Image Include="res\XFMSDoc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Library\Matrox\Matrox.vcxproj">
+      <Project>{252eb1d5-b8ea-4259-88fd-ee720fe236be}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Library\SerialLib\SerialLib.vcxproj">
+      <Project>{d5ac68a0-568e-4caf-a9cd-fe8bc462af0c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Library\UniUtility\UniUtility.vcxproj">
+      <Project>{35585369-ef80-4ce7-b67c-91f86bf50fed}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="XNPI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\XNPI.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

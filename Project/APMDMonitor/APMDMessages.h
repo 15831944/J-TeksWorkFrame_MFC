@@ -1,0 +1,6 @@
+#pragma once
+
+#define WM_SEND_TESTRECORD	(WM_USER+1) 
+#define WM_UPDATE_RECORD	(WM_USER+2)
+#define WM_UPDATE_STATINFO	(WM_USER+3)
+#define WM_MARK_TOOLTIPTIME (WM_USER+4)

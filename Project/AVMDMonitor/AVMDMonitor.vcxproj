@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{031DE32D-A36E-4F3C-80FE-4B84777583FD}</ProjectGuid>
+    <RootNamespace>AVMDMonitor</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseIntelIPP>true</UseIntelIPP>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseIntelIPP>true</UseIntelIPP>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>C:\Program Files %28x86%29\IntelSWTools\compilers_and_libraries_2017.2.187\windows\ipp\lib\ia32_win;F:\Project\AVMDMonitor\Library;$(LibraryPath);..\..\lib</LibraryPath>
+    <OutDir>$(SolutionDir)Runtime\bin\</OutDir>
+    <TargetName>$(ProjectName)32</TargetName>
+    <IncludePath>C:\Program Files %28x86%29\IntelSWTools\compilers_and_libraries_2017.2.187\windows\ipp\include;..\..\inc;$(IncludePath)</IncludePath>
+    <ExecutablePath>C:\Program Files %28x86%29\IntelSWTools\compilers_and_libraries_2017.2.187\windows\redist\ia32_win\ipp;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\IntelSWTools\compilers_and_libraries_2017.2.187\windows\ipp\include;..\..\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\IntelSWTools\compilers_and_libraries_2017.2.187\windows\ipp\lib\ia32_win;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Runtime\bin\</OutDir>
+    <TargetName>$(ProjectName)32</TargetName>
+    <ExecutablePath>C:\Program Files %28x86%29\IntelSWTools\compilers_and_libraries_2017.2.187\windows\redist\ia32_win\ipp;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>UniUtilityD32.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnnotateMarkDlg.h" />
+    <ClInclude Include="AVMDDefine.h" />
+    <ClInclude Include="AVMDDisplayDlg.h" />
+    <ClInclude Include="AVMDFFTGraphDlg.h" />
+    <ClInclude Include="AVMDGraphDlg.h" />
+    <ClInclude Include="AVMDMonitor.h" />
+    <ClInclude Include="AVMDMonitorDoc.h" />
+    <ClInclude Include="AVMDMonitorView.h" />
+    <ClInclude Include="AVMDReview.h" />
+    <ClInclude Include="AVMDScrollDlg.h" />
+    <ClInclude Include="AVMDTimeDlg.h" />
+    <ClInclude Include="AVMDViewDlg.h" />
+    <ClInclude Include="ComSetDlg.h" />
+    <ClInclude Include="DrawingHelper.h" />
+    <ClInclude Include="EnvSettingDlg.h" />
+    <ClInclude Include="FilterIIR.h" />
+    <ClInclude Include="LedONOFF.h" />
+    <ClInclude Include="listports.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MarkEditDlg.h" />
+    <ClInclude Include="PartialSaveDlg.h" />
+    <ClInclude Include="ProgressBarDlg.h" />
+    <ClInclude Include="Repository.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SetFilterDlg.h" />
+    <ClInclude Include="SetEventSettingDlg.h" />
+    <ClInclude Include="SetTimeDomainFormatDlg.h" />
+    <ClInclude Include="StationInformationDlg.h" />
+    <ClInclude Include="Status.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TempDlg.h" />
+    <ClInclude Include="XLAutomation.h" />
+    <ClInclude Include="XLEzAutomation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnnotateMarkDlg.cpp" />
+    <ClCompile Include="AVMDDisplayDlg.cpp" />
+    <ClCompile Include="AVMDFFTGraphDlg.cpp" />
+    <ClCompile Include="AVMDGraphDlg.cpp" />
+    <ClCompile Include="AVMDMonitor.cpp" />
+    <ClCompile Include="AVMDMonitorDoc.cpp" />
+    <ClCompile Include="AVMDMonitorView.cpp" />
+    <ClCompile Include="AVMDReview.cpp" />
+    <ClCompile Include="AVMDScrollDlg.cpp" />
+    <ClCompile Include="AVMDTimeDlg.cpp" />
+    <ClCompile Include="AVMDViewDlg.cpp" />
+    <ClCompile Include="ComSetDlg.cpp" />
+    <ClCompile Include="DrawingHelper.cpp" />
+    <ClCompile Include="EnvSettingDlg.cpp" />
+    <ClCompile Include="FilterIIR.cpp" />
+    <ClCompile Include="LedONOFF.cpp" />
+    <ClCompile Include="listports.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MarkEditDlg.cpp" />
+    <ClCompile Include="PartialSaveDlg.cpp" />
+    <ClCompile Include="ProgressBarDlg.cpp" />
+    <ClCompile Include="Repository.cpp" />
+    <ClCompile Include="SetFilterDlg.cpp" />
+    <ClCompile Include="SetEventSettingDlg.cpp" />
+    <ClCompile Include="SetTimeDomainFormatDlg.cpp" />
+    <ClCompile Include="StationInformationDlg.cpp" />
+    <ClCompile Include="Status.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TempDlg.cpp" />
+    <ClCompile Include="XLAutomation.cpp" />
+    <ClCompile Include="XLEzAutomation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AVMDMonitor.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="res\AVMDMonitor.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\icon\1490096604_controls_play_back.ico" />
+    <Image Include="..\..\icon\1490097268_black_4_audio_play.ico" />
+    <Image Include="..\..\icon\1490097508_icon-ios7-rewind.ico" />
+    <Image Include="..\..\icon\1490097513_icon-ios7-fastforward.ico" />
+    <Image Include="..\..\icon\1490107423_media-pause.ico" />
+    <Image Include="..\..\icon\Backplay.ico" />
+    <Image Include="..\..\icon\End.ico" />
+    <Image Include="..\..\icon\Play.ico" />
+    <Image Include="..\..\icon\Stop.ico" />
+    <Image Include="C:\Users\김용재\Downloads\1490090654_icons_next.ico" />
+    <Image Include="res\1490096604_controls_play_back.ico" />
+    <Image Include="res\1490097268_black_4_audio_play.ico" />
+    <Image Include="res\1490097508_icon-ios7-rewind.ico" />
+    <Image Include="res\1490097513_icon-ios7-fastforward.ico" />
+    <Image Include="res\1490107423_media-pause.ico" />
+    <Image Include="res\AVMDMonitor.ico" />
+    <Image Include="res\AVMDMonitorDoc.ico" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\icon2.ico" />
+    <Image Include="res\icon3.ico" />
+    <Image Include="res\icon_pla.ico" />
+    <Image Include="res\SesoMark.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Library\SerialLib\SerialLib.vcxproj">
+      <Project>{d5ac68a0-568e-4caf-a9cd-fe8bc462af0c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Library\UniUtility\UniUtility.vcxproj">
+      <Project>{35585369-ef80-4ce7-b67c-91f86bf50fed}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="AVMDMonitor.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

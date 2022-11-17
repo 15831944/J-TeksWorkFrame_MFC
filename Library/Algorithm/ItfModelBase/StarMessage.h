@@ -1,0 +1,23 @@
+#pragma once
+//For DetailPropDlg
+#define WM_SHOW_RESULT  (WM_USER+1)
+//For CPositionListDlg
+
+#define WM_START_AUTOINSPECTION (WM_USER+1)
+#define WM_NEXT_DEFECTPOS		(WM_USER+2)
+#define WM_PREV_DEFECTPOS		(WM_USER+3)
+#define WM_JUDGE			(WM_USER+4)
+#define WM_PROGRESS_INIT	(WM_USER+5)
+#define WM_PROGRESS_UPDATE	(WM_USER+6)
+#define WM_RESULT_UPDATE	(WM_USER+7)
+#define WM_START_AUTOINSPECTION_TSP (WM_USER+8)
+#define WM_START_JOYTHREAD	(WM_USER+9)
+//ForC CTMotionDlg
+#define WM_GETCHECKED		(WM_USER+10)
+#define WM_SHOW_TRIALRST	(WM_USER+11)
+#define WM_SCRN_UPDATE		(WM_USER+12)
+
+//for Tabresult 
+
+#define WM_SETPAUSE_POS (WM_USER+13)
+#define WM_ERR_UPDATE	(WM_USER+14)

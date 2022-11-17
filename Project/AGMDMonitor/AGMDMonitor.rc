@@ -1,0 +1,949 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#include ""res\\AGMDMonitor.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소\r\n"
+    "#include ""l.KOR\\afxprint.rc""    // 인쇄 미리 보기 리소스\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\AGMDMonitor.ico"
+
+IDR_AGMDMonitorTYPE     ICON                    "res\\AGMDMonitorDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDB_SESOMARK            BITMAP                  "res\\SesoMark.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Save As\tCtrl+A",            ID_FILE_SAVEASLOGFILE
+        MENUITEM "&Export Excel\tCtrl+E",       ID_FILE_SAVE
+        MENUITEM "Data Report(P)...",           ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_APP_EXIT
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Tool Bar(&T)",                ID_VIEW_TOOLBAR
+        MENUITEM "Status Bar Set/Reset",        ID_VIEW_STATUS_BAR
+    END
+    POPUP "Settings"
+    BEGIN
+        MENUITEM "Environment Setting",         ID_ENV_SET
+        MENUITEM "Set Station Information",     ID_SETTINGS_SETSTATIONINFORMATION
+        MENUITEM "Set Gap Criteria",            ID_SETTINGS_SETGAPCRITERIA
+        POPUP "Select Colors"
+        BEGIN
+            MENUITEM "Tolerance",                   ID_SELECTCOLORS_TOLERANCE
+            MENUITEM "Spec In",                     ID_SELECTCOLORS_SPECIN
+            POPUP "Spec Out"
+            BEGIN
+                MENUITEM "Gap is too small",            ID_SPECOUT_GAPISTOOSMALL
+                MENUITEM "Gap is too big",              ID_SPECOUT_GAPISTOOBIG
+            END
+        END
+        POPUP "Set Display Orientation"
+        BEGIN
+            MENUITEM "Notch at 2 o'clock",          ID_SET_NOTCH_2
+            MENUITEM "Notch at 4 o'clock",          ID_SET_NOTCH_4
+            MENUITEM "Notch at 6 o'clock",          ID_SET_NOTCH_6
+            MENUITEM "Notch at 8 o'clock",          ID_SET_NOTCH_8
+            MENUITEM "Notch at 10 o'clock",         ID_SET_NOTCH_10
+            MENUITEM "Notch at 12 o'clock",         ID_SET_NOTCH_12
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Device Calibration",          ID_SETTINGS_CALIBRATION
+        MENUITEM "Com Port Setting",            ID_SETTINGS_COMPORTSETTING
+        MENUITEM SEPARATOR
+        MENUITEM "About AGMD",                  ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "A",            ID_FILE_SAVEASLOGFILE,  VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 279, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AGMD Information"
+FONT 7, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "AGMD, Version 1.0",IDC_STATIC,202,7,68,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017",IDC_STATIC,201,17,70,8
+    DEFPUSHBUTTON   "Ok",IDOK,221,90,50,14,WS_GROUP
+    CONTROL         IDB_SESOMARK,IDC_STATIC,"Static",SS_BITMAP,7,7,183,97
+END
+
+IDD_MONITORDLG DIALOGEX 0, 0, 146, 194
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 7, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Mode",IDC_STATIC,7,3,132,27
+    CONTROL         "View",IDC_RADIO_VIEW,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,27,13,31,10
+    CONTROL         "Review",IDC_RADIO_REVIEW,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,72,13,39,10
+    GROUPBOX        "Command",IDC_STATIC,7,29,132,44
+    PUSHBUTTON      "Read",IDC_BTN_READ,11,41,33,14
+    CONTROL         "Use auto Command",IDC_CHK_AUTO_CMD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,47,41,83,10
+    LTEXT           "Interval",IDC_STATIC,11,58,35,8
+    COMBOBOX        IDC_CB_INTNO,49,57,22,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_GINT,73,57,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Gap Status",IDC_STATIC,7,72,132,115
+    LTEXT           "- Gap 1",IDC_STATIC_GAP1,17,81,31,10
+    CTEXT           "Static",IDC_LGAP1,51,81,54,19,WS_BORDER,WS_EX_CLIENTEDGE
+    LTEXT           "- Gap 2",IDC_STATIC_GAP2,17,116,32,10
+    CTEXT           "Static",IDC_LGAP2,51,116,54,19,WS_BORDER,WS_EX_CLIENTEDGE
+    LTEXT           "- Gap 3",IDC_STATIC_GAP3,17,150,32,10
+    CTEXT           "Static",IDC_LGAP3,51,150,54,19,WS_BORDER,WS_EX_CLIENTEDGE
+    LTEXT           "mm",IDC_STATIC_GAP1_UNIT,109,86,26,8
+    LTEXT           "mm",IDC_STATIC_GAP2_UNIT,109,121,26,8
+    LTEXT           "mm",IDC_STATIC_GAP3_UNIT,109,156,26,8
+    LTEXT           "Tolerance :",IDC_STATIC_GAP1_TOL,23,100,79,8
+    LTEXT           "Tolerance :",IDC_STATIC_GAP3_TOL,23,173,79,8
+    LTEXT           "Tolerance :",IDC_STATIC_GAP2_TOL,23,138,79,8
+END
+
+IDD_OPPANELDLG DIALOGEX 0, 0, 146, 99
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 7, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Reference plane",IDC_STATIC,7,3,132,89
+    CONTROL         "None",IDC_RADIO_NONE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,14,33,10
+    CONTROL         "Offset Apply",IDC_RADIO_OFFSET,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,12,30,55,10
+    LTEXT           "Gap 1 :",IDC_STATIC,19,45,29,8
+    EDITTEXT        IDC_EDIT_OFFSET_GAP1,47,43,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC_1,94,47,38,8
+    LTEXT           "Gap 2 :",IDC_STATIC,19,61,29,8
+    EDITTEXT        IDC_EDIT_OFFSET_GAP2,47,59,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC_2,94,62,37,8
+    LTEXT           "Gap 3 :",IDC_STATIC,19,77,27,8
+    EDITTEXT        IDC_EDIT_OFFSET_GAP3,47,75,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "mm",IDC_STATIC_3,94,77,38,8
+    PUSHBUTTON      "Apply",IDC_BTN_APPLY,90,27,37,14
+END
+
+IDD_VIEWDLG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 7, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+END
+
+IDD_SENSORVIEWDLG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 7, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+END
+
+IDD_SENSORSTATUSDLG DIALOGEX 0, 0, 146, 63
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 7, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "50%",IDC_BATTNUM,102,40,23,8
+    LTEXT           "˚C",IDC_STATIC,102,28,18,8
+    CTEXT           "0",IDC_STATIC_TEMPERATURE,71,25,28,11,0,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_PROGRESS_BATTERY,"msctls_progress32",WS_BORDER,48,40,50,7
+    LTEXT           "Battery",IDC_STATIC,15,40,28,8
+    LTEXT           "Temperature",IDC_STATIC,15,28,47,8
+    LTEXT           "Connect",IDC_STATIC,15,15,34,8
+    GROUPBOX        "Sensor Status",IDC_STATIC,7,3,132,53
+    CONTROL         "",IDC_STAT_CONNECT,"msctls_progress32",WS_BORDER,50,15,9,8
+END
+
+IDD_BROWSERDLG DIALOGEX 0, 0, 147, 70
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 7, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Prev",IDC_BTN_PREV,16,46,28,14
+    PUSHBUTTON      "Next",IDC_BTN_NEXT,46,46,28,14
+    EDITTEXT        IDC_EDIT_DISPLAY_NUM,16,29,32,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "of 100",IDC_STATIC_TOTAL_DISPLAY_NUM,54,31,33,8
+    COMBOBOX        IDC_CB_BROWSER,16,15,113,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Browser",IDC_STATIC,7,3,130,60
+END
+
+IDD_COMSET DIALOGEX 0, 0, 139, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Com Port Setting"
+FONT 7, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL2,82,43,50,13
+    DEFPUSHBUTTON   "Save",IDOK2,30,43,50,13
+    LTEXT           "Port No.",IDC_STATIC,12,11,28,8
+    LTEXT           "Baud Rate",IDC_STATIC,12,24,35,8
+    COMBOBOX        IDC_CBPORTNO,43,8,89,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CBBAUDRATE,84,23,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SETGAPCRITERIADLG DIALOGEX 0, 0, 235, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Gap Criteria"
+FONT 7, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,123,185,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,178,185,50,14
+    GROUPBOX        "Gap Unit",IDC_STATIC,7,7,48,40
+    CONTROL         "inches",IDC_RADIO_INCHES,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,19,33,10
+    CONTROL         "mm",IDC_RADIO_MM,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,14,33,27,10
+    CONTROL         "All Three Gaps the Same",IDC_CHECK_ALL_GAP_SAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,52,94,10
+    GROUPBOX        "All Gaps",IDC_STATIC_ALL,7,66,221,29
+    LTEXT           "Target :",IDC_STATIC,14,79,33,8
+    EDITTEXT        IDC_EDIT_ALL_TARGET,46,76,40,14,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC_ALL_TARGET_UNIT,89,79,25,8
+    LTEXT           "Tolerance :",IDC_STATIC,117,79,42,8
+    EDITTEXT        IDC_EDIT_ALL_TOLERANCE,155,76,40,14,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC_ALL_TOLERANCE_UNIT,197,79,24,8
+    GROUPBOX        "Gap1",IDC_STATIC_GAP1,7,95,221,29
+    LTEXT           "Target :",IDC_STATIC,14,108,36,8
+    EDITTEXT        IDC_EDIT_GAP1_TARGET,46,105,40,14,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC_GAP1_TARGET_UNIT,89,108,25,8
+    LTEXT           "Tolerance :",IDC_STATIC,117,108,41,8
+    EDITTEXT        IDC_EDIT_GAP1_TOLERANCE,155,105,40,14,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC_GAP1_TOLERANCE_UNIT,197,108,25,8
+    GROUPBOX        "Gap2",IDC_STATIC_GAP2,7,124,221,29
+    LTEXT           "Target :",IDC_STATIC,14,137,33,8
+    EDITTEXT        IDC_EDIT_GAP2_TARGET,46,134,40,14,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC_GAP2_TARGET_UNIT,89,137,25,8
+    LTEXT           "Tolerance :",IDC_STATIC,117,137,42,8
+    EDITTEXT        IDC_EDIT_GAP2_TOLERANCE,155,134,40,14,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC_GAP2_TOLERANCE_UNIT,197,137,25,8
+    GROUPBOX        "Gap3",IDC_STATIC_GAP3,7,155,221,29
+    LTEXT           "Target :",IDC_STATIC,14,168,31,8
+    EDITTEXT        IDC_EDIT_GAP3_TARGET,46,165,40,14,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC_GAP3_TARGET_UNIT,89,168,27,8
+    LTEXT           "Tolerance :",IDC_STATIC,117,168,46,8
+    EDITTEXT        IDC_EDIT_GAP3_TOLERANCE,155,165,40,14,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC_GAP3_TOLERANCE_UNIT,197,168,26,8
+    GROUPBOX        "Gap View Range",IDC_STATIC,57,7,171,40
+    LTEXT           "The range shown depends on the set value.",IDC_STATIC,67,19,153,8
+    EDITTEXT        IDC_EDIT_VIEW_RANGE,66,29,40,14,ES_AUTOHSCROLL
+END
+
+IDD_STATIONINFOMATION DIALOGEX 0, 0, 187, 125
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Station Infomation"
+FONT 7, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Operator :",IDC_STATIC,18,12,35,8
+    LTEXT           "Tool :",IDC_STATIC,32,27,21,8
+    LTEXT           "Station :",IDC_STATIC,24,43,30,8
+    LTEXT           "Comment :",IDC_STATIC,16,56,38,8
+    EDITTEXT        IDC_EDIT_OPERATOR,56,11,67,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TOOL,56,26,67,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STATION,56,41,67,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COMMENT,56,56,67,62,ES_MULTILINE | ES_AUTOHSCROLL
+    PUSHBUTTON      "Clear All",IDC_BTN_CLEAR,130,10,50,14
+    DEFPUSHBUTTON   "Apply",IDC_BTN_APPLY,130,90,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,104,50,14
+END
+
+IDD_CAL1 DIALOGEX 0, 0, 257, 105
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "You can calibrate your device by this calibration menu.",IDC_STATIC,22,19,211,10
+    LTEXT           "Current value :",IDC_STATIC,30,34,57,8
+    LTEXT           "1. Put your device in the jig.",IDC_STATIC,28,52,98,8
+    LTEXT           "2. Check value.",IDC_STATIC,28,68,60,8
+    EDITTEXT        IDC_EDT_JIGGAP,58,81,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "um",IDC_STATIC,102,84,17,8
+    LTEXT           "Jig Gap:",IDC_STATIC,26,84,30,8
+    LTEXT           "",IDC_CALINFO,85,33,151,8
+    LTEXT           "(Standard jig:15025um)",IDC_STATIC,123,83,95,8
+END
+
+IDD_CAL2 DIALOGEX 0, 0, 262, 92
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Calibration value is changed as following",IDC_STATIC,13,19,241,8
+    CONTROL         "",IDC_LST_CALIBRATIONRESULT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,32,248,46
+END
+
+IDD_ENVSETTINGDLG DIALOGEX 0, 0, 239, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Environment Setting"
+FONT 7, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,131,55,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,182,55,50,14
+    LTEXT           "Data Save Folder",IDC_STATIC,13,17,85,8
+    LTEXT           "Data File Name",IDC_STATIC,13,37,93,8
+    EDITTEXT        IDC_EDT_SAVEFOLDER,89,15,128,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DFNAME,89,33,67,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_SETFOLDER,217,15,15,14
+END
+
+IDD_REPORT DIALOGEX 0, 0, 207, 59
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Excel Report"
+FONT 7, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,96,38,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,150,38,50,14
+    PUSHBUTTON      "Load LogFile",IDC_BTNLOAD,7,7,50,14
+    PUSHBUTTON      "Apply",IDC_BTN_DATAAPPLY,7,23,50,14
+    LTEXT           "Report Data Count :",IDC_STATIC,71,16,72,8
+    CTEXT           "0",IDC_NREPORTDATA,140,16,17,8
+    LTEXT           "(Max : 7)",IDC_STATIC,156,16,44,8
+END
+
+IDD_CALIBRATION DIALOGEX 0, 0, 259, 125
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Next",IDC_BTN_NEXT,202,104,50,14,WS_DISABLED
+    PUSHBUTTON      "Prev",IDC_BTN_PREV,146,104,50,14,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "AGMDMonitor"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "AGMDMonitor.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "AGMDMonitor.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_MONITORDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_OPPANELDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_VIEWDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_SENSORVIEWDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_SENSORSTATUSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_BROWSERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_COMSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_SETGAPCRITERIADLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_STATIONINFOMATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_CAL1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_CAL2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_ENVSETTINGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_REPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_CALIBRATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_MONITORDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 0, 0,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100,
+    0, 100, 100, 100
+END
+
+IDD_OPPANELDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    0, 0, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    100, 100, 0, 0
+END
+
+IDD_VIEWDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SENSORVIEWDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SENSORSTATUSDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    100, 100, 100, 100,
+    100, 100, 100, 100,
+    100, 100, 100, 100,
+    100, 100, 100, 100,
+    100, 100, 100, 100,
+    100, 100, 100, 100,
+    100, 100, 100, 100,
+    100, 100, 0, 0,
+    100, 100, 100, 100
+END
+
+IDD_BROWSERDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    0, 0, 0, 0
+END
+
+IDD_COMSET AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0
+END
+
+IDD_SETGAPCRITERIADLG AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0
+END
+
+IDD_STATIONINFOMATION AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0,
+    100, 100, 0, 0
+END
+
+IDD_CAL1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CAL2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ENVSETTINGDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_REPORT AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 100, 100,
+    0, 0, 100, 100,
+    0, 0, 100, 100,
+    0, 0, 100, 100,
+    0, 0, 100, 100,
+    0, 0, 100, 100,
+    0, 0, 100, 100
+END
+
+IDD_CALIBRATION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    100, 0, 0, 0,
+    100, 0, 0, 0,
+    100, 100, 0, 0,
+    0, 0, 0, 0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE를 초기화할 수 없습니다. OLE 라이브러리 버전이 올바른지 확인하십시오."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "AGMDMonitor\n\nAGMDMonitor\n\n\nAGMDMonitor.Document\nAGMDMonitor.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "AGMDMonitor"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "새 문서를 만듭니다.\n새로 만들기"
+    ID_FILE_OPEN            "Open the log file"
+    ID_FILE_CLOSE           "활성 문서를 닫습니다.\n닫기"
+    ID_FILE_SAVE            "Export CSV File"
+    ID_FILE_SAVE_AS         "Export CSV File"
+    ID_FILE_PAGE_SETUP      "인쇄 옵션을 변경합니다.\n페이지 설정"
+    ID_FILE_PRINT_SETUP     "프린터 및 인쇄 옵션을 변경합니다.\n인쇄 설정"
+    ID_FILE_PRINT           "Export Data Report"
+    ID_FILE_PRINT_DIRECT    "현재 옵션을 사용하여 활성 문서를 인쇄합니다.\n빠른 인쇄"
+    ID_FILE_PRINT_PREVIEW   "전체 페이지를 표시합니다.\n인쇄 미리 보기"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display Program Information, Version\nInfor"
+    ID_APP_EXIT             "Exit Program"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE2       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE3       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE4       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE5       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE6       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE7       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE8       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE9       "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE10      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE11      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE12      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE13      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE14      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE15      "현재 문서를 엽니다."
+    ID_FILE_MRU_FILE16      "현재 문서를 엽니다."
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다.\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다.\n이전 창"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "활성 창을 여러 개의 창으로 분할합니다.\n분할"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "선택 영역을 지웁니다.\n지우기"
+    ID_EDIT_CLEAR_ALL       "모두 지웁니다.\n모두 지우기"
+    ID_EDIT_COPY            "선택 영역을 복사하여 클립보드에 넣습니다.\n복사"
+    ID_EDIT_CUT             "선택 영역을 잘라내어 클립보드에 넣습니다.\n잘라내기"
+    ID_EDIT_FIND            "지정한 텍스트를 찾습니다.\n찾기"
+    ID_EDIT_PASTE           "클립보드 내용을 삽입합니다.\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막 작업을 반복합니다.\n반복"
+    ID_EDIT_REPLACE         "특정 텍스트를 다른 텍스트로 바꿉니다.\n바꾸기"
+    ID_EDIT_SELECT_ALL      "전체 문서를 선택합니다.\n모두 선택"
+    ID_EDIT_UNDO            "마지막 작업 실행을 취소합니다.\n실행 취소"
+    ID_EDIT_REDO            "이전에 실행 취소된 작업을 다시 실행합니다.\n다시 실행"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Tool Bar Set/Reset"
+    ID_VIEW_STATUS_BAR      "Status Bar Set/Reset"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "창 크기를 변경합니다."
+    AFX_IDS_SCMOVE          "창 위치를 변경합니다."
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 축소합니다."
+    AFX_IDS_SCMAXIMIZE      "창을 전체 화면 크기로 확대합니다."
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다."
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다."
+    AFX_IDS_SCCLOSE         "문서를 저장할 것인지 확인하고 활성 창을 닫습니다."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 보통 크기로 복원합니다."
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "인쇄 미리 보기 모드를 닫습니다.\n미리 보기 취소"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SETTINGS_SETGAPCRITERIA "Set Gap Criteria"
+    ID_SETTINGS_SETSTATIONINFORMATION "Set Station Information"
+    ID_SETTINGS_SETGAPOFFSETS "Set Gap Offsets"
+    ID_SETTINGS_COMPORTSETTING "Set Port, Baud Rate"
+    ID_SETTINGS_CALIBRATION "Calibrate device"
+    ID_ENV_SET              "Set Folder, File name"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_SAVEASLOGFILE   "Save As"
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#include "res\AGMDMonitor.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소
+#include "l.KOR\afxprint.rc"    // 인쇄 미리 보기 리소스
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

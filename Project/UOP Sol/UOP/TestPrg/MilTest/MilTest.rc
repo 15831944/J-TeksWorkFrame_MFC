@@ -1,0 +1,312 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\MilTest.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MilTest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MilTest 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "MilTest, 버전 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "확인",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_MILTEST_DIALOG DIALOGEX 0, 0, 539, 356
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MilTest"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "MilOpen",IDC_BTN_OPEN,489,7,36,14
+    DEFPUSHBUTTON   "MilClose",IDC_BTN_CLOSE,444,7,36,14
+    DEFPUSHBUTTON   "LoadImg",IDC_BTN_LOADIMAGE,489,29,36,14
+    DEFPUSHBUTTON   "Select",IDC_BTN_SELECT,398,29,40,14
+    DEFPUSHBUTTON   "SelWnd",IDC_BTN_SELWND,444,29,36,14
+    DEFPUSHBUTTON   "BLOB",IDC_BTN_BLOB,349,199,36,14
+    DEFPUSHBUTTON   "Process",IDC_BTN_PROC,489,98,36,14
+    DEFPUSHBUTTON   "GetAttr",IDC_BTN_GETATTR,398,98,40,14
+    DEFPUSHBUTTON   "Resize",IDC_BTN_RESIZE,398,63,40,14
+    DEFPUSHBUTTON   "IMClose",IDC_BTN_IMCLOSE,350,220,36,14
+    DEFPUSHBUTTON   "Find",IDC_BTN_FIND,486,199,36,14
+    DEFPUSHBUTTON   "Binarize",IDC_BTN_BIN,444,63,36,14
+    CONTROL         "",IDC_IMAGE_VIEW,"Static",SS_BLACKFRAME,7,7,330,342
+    DEFPUSHBUTTON   "PUT",IDC_BTN_PUT,352,7,36,14
+    DEFPUSHBUTTON   "Histogram",IDC_BTN_HISTOGRAM,352,63,36,14
+    DEFPUSHBUTTON   "Find GMF",IDC_BTN_GMF,443,199,36,14
+    DEFPUSHBUTTON   "ClipImg",IDC_BTN_CLIPIMG,352,29,36,14
+    CONTROL         "",IDC_IMG_SPLMT,"Static",SS_BLACKFRAME,394,241,138,108
+    PUSHBUTTON      "Average",IDC_AVR,444,98,35,14
+    PUSHBUTTON      "Save",IDC_BTN_SAVE,496,153,36,14
+    PUSHBUTTON      "LvlWnd",IDC_BTNLVLWND,352,98,36,14
+    PUSHBUTTON      "HistoTest",IDC_BTNHISTOTEST,352,119,36,14
+    PUSHBUTTON      "GetMaxMin",IDC_BTN_GETMAXMIN,398,119,40,14
+    PUSHBUTTON      "Save GMF",IDC_GMF_SAVE,395,199,40,14
+    PUSHBUTTON      "ImportImg",IDC_IMPORT,489,63,38,14
+    PUSHBUTTON      "ZOOM",IDC_ZOOM,448,119,30,14
+    PUSHBUTTON      "PAN",IDC_BTN_PAN,395,220,40,14
+    PUSHBUTTON      "ShowContext",IDC_BTN_SHOWCONTEXT,443,220,51,14
+    CONTROL         "Use AutoScale",IDC_CHK_AUTOSCALE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,353,48,63,10
+    EDITTEXT        IDC_EDT_BINV,389,82,41,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SP_BINV,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,431,80,11,14
+    LTEXT           "Bin Value",IDC_STATIC,355,84,31,8
+    CONTROL         "FILL Window",IDC_CHK_FILLWND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,420,46,58,10
+    PUSHBUTTON      "TransCord",IDC_CALCORD,341,242,50,14
+    PUSHBUTTON      "Save JPG",IDC_BTNJPGSAVE,342,265,50,14
+    PUSHBUTTON      "Load RAW",IDC_BTN_LOADRAWIMAGE,342,286,50,14
+    GROUPBOX        "Static",IDC_STATIC,351,148,181,24
+    CONTROL         "BMP",IDC_RTYPE,"Button",BS_AUTORADIOBUTTON,356,156,29,10
+    CONTROL         "JPG",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,393,156,27,10
+    CONTROL         "TIFF",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,430,156,30,10
+END
+
+IDD_VIEW DIALOGEX 0, 0, 316, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_HSCROLL | WS_SYSMENU
+EXSTYLE WS_EX_LEFTSCROLLBAR
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,154,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,259,154,50,14
+END
+
+IDD_SCRN_HISTO DIALOGEX 0, 0, 473, 167
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Histogram"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Custom2",IDC_SLIDER_HISTOGRAM,"HistoSlider",WS_TABSTOP,7,68,459,8
+    CONTROL         "Manual",IDC_CHK_MAN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,144,39,10
+    EDITTEXT        IDC_SLIDERLEFT,124,142,27,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SLIDERRIGHT,158,142,27,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "취소",IDCANCEL,416,147,50,14
+    LTEXT           "Slider Value",IDC_STATIC,86,145,38,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MilTest.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "MilTest.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_MILTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 532
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 349
+    END
+
+    IDD_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_SCRN_HISTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 466
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SCRN_HISTO DLGINIT
+BEGIN
+    1018, 0x376, 195, 0
+0x0000, 0x0000, 0x0001, 0x0001, 0x4736, 0x0000, 0x0a3b, 0x0000, 0x0004, 
+0x0000, 0x0300, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 
+0x0151, 0x0000, 0x9000, 0x4401, 0x0142, 0x0600, 0x6154, 0x6f68, 0x616d, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x40b0, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x4059, 0x0001, 0x0001, 
+0x0001, 0x0001, 0x0001, 0x000a, 0x0000, 0x0900, 0x3030, 0x3030, 0x3030, 
+0x3030, 0x0930, 0x3532, 0x3035, 0x3030, 0x3030, 0x0930, 0x3532, 0x3235, 
+0x3535, 0x3532, 0x0935, 0x3532, 0x3135, 0x3832, 0x3630, 0x0934, 0x3030, 
+0x3230, 0x3535, 0x3030, 0x0930, 0x3030, 0x3230, 0x3535, 0x3532, 0x0935, 
+0x3030, 0x3030, 0x3030, 0x3532, 0x0935, 0x3831, 0x3136, 0x3739, 0x3032, 
+0x0939, 0x3831, 0x3136, 0x3739, 0x3032, 0x0039, 0x0101, "\001" 
+    1019, 0x376, 195, 0
+0x0000, 0x0000, 0x0001, 0x0001, 0x4736, 0x0000, 0x0a3b, 0x0000, 0x0004, 
+0x0000, 0x0300, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 0xb84b, 
+0x0151, 0x0000, 0x9000, 0x4401, 0x0142, 0x0600, 0x6154, 0x6f68, 0x616d, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x40b0, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x4059, 0x0001, 0x0001, 
+0x0001, 0x0001, 0x0001, 0x000a, 0x0000, 0x0900, 0x3030, 0x3030, 0x3030, 
+0x3030, 0x0930, 0x3532, 0x3035, 0x3030, 0x3030, 0x0930, 0x3532, 0x3235, 
+0x3535, 0x3532, 0x0935, 0x3532, 0x3135, 0x3832, 0x3630, 0x0934, 0x3030, 
+0x3230, 0x3535, 0x3030, 0x0930, 0x3030, 0x3230, 0x3535, 0x3532, 0x0935, 
+0x3030, 0x3030, 0x3030, 0x3532, 0x0935, 0x3731, 0x3132, 0x3836, 0x3531, 
+0x0933, 0x3731, 0x3132, 0x3836, 0x3531, 0x0033, 0x0101, "\001" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "MilTest 정보(&A)..."
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\MilTest.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,795 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""res\\ALMDMonitor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#include ""afxprint.rc""    // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SESOMARK            BITMAP                  "res\\SesoMark.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_STATUS DIALOGEX 0, 0, 141, 247
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Temperature",IDC_STATIC,21,192,44,8
+    LTEXT           "Battery",IDC_STATIC,21,209,24,8
+    CONTROL         "",IDC_STAT_BATTERY,"msctls_progress32",WS_BORDER,55,208,39,10
+    CTEXT           "Static",IDC_ALMDTEMP,70,192,31,8,SS_SUNKEN
+    GROUPBOX        "Sensor Status",IDC_STATIC,7,183,127,54
+    GROUPBOX        "Level Status",IDC_STATIC,7,96,127,81
+    LTEXT           "Roll(x)",IDC_LABEL_ROLL,10,117,40,13
+    LTEXT           "Pitch(y)",IDC_LABEL_PITCH,10,145,40,13
+    EDITTEXT        IDC_EDT_ROLL,52,109,55,22,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDT_PITCH,52,138,55,22,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    GROUPBOX        "Command",IDC_STATIC,7,48,127,47
+    PUSHBUTTON      "Read",IDC_BTN_READ,9,57,40,14,WS_DISABLED
+    COMBOBOX        IDC_CB_GINT,76,75,48,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_INTNO,45,75,29,30,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Use auto Command",IDC_CHK_USEAC,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,51,59,79,10
+    LTEXT           "°",IDC_RUNIT,110,113,23,18
+    LTEXT           "°",IDC_PUNIT,110,142,23,18
+    LTEXT           "Interval",IDC_STATIC,14,77,26,8
+    LTEXT           "°C",IDC_STATIC,104,191,13,8
+    LTEXT           "Connect",IDC_STATIC,21,222,27,8
+    CONTROL         "",IDC_STAT_CONNECT,"msctls_progress32",WS_BORDER,55,221,9,9
+    GROUPBOX        "Mode",IDC_STATIC,7,7,127,35
+    CONTROL         "Review",IDC_RPROMODE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,70,21,39,10
+    CONTROL         "View",IDC_RPROMODEV,"Button",BS_AUTORADIOBUTTON,26,21,32,10
+    LTEXT           "Static",IDC_BATSTAT,97,208,19,8
+    LTEXT           "Go/No Go:",IDC_STATIC,18,166,35,8
+    LTEXT           "--",IDC_DISPTOLERANCE,59,167,49,8
+END
+
+IDD_VIEW DIALOGEX 0, 0, 592, 178
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_OPPANEL DIALOGEX 0, 0, 482, 94
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Reference plane",IDC_STATIC,7,7,133,80
+    CONTROL         "Absolute",IDC_RREFPLAN,"Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,19,18,44,10
+    CONTROL         "Relative",IDC_RREL,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,19,32,42,10
+    EDITTEXT        IDC_EDT_RROL,49,47,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDT_RPITCH,49,64,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Operator",IDC_STATIC,161,23,30,8
+    LTEXT           "Tool",IDC_STATIC,239,23,15,8
+    LTEXT           "Station",IDC_STATIC,301,23,24,8
+    LTEXT           "Comment",IDC_STATIC,161,40,32,8
+    EDITTEXT        IDC_EDT_MOP,192,21,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_MTOOL,256,21,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_MSTATION,328,21,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_MCMT,209,39,261,14,ES_AUTOHSCROLL
+    GROUPBOX        "Mark",IDC_STATIC,153,7,322,54
+    PUSHBUTTON      "Apply",IDC_BTN_MARKAPPLY,371,20,46,14
+    PUSHBUTTON      "Clear All",IDC_BTN_MARKCLEAR,422,20,38,14
+    LTEXT           "Roll(x)",IDC_STATIC,18,50,22,8
+    LTEXT           "Pitch(y)",IDC_STATIC,18,66,26,8
+    PUSHBUTTON      "NEXT",IDC_BTN_MNEXT,207,65,50,14
+    PUSHBUTTON      "PREV",IDC_BTN_MPREV,153,65,50,14
+    EDITTEXT        IDC_EDT_MPOS,266,65,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "of",IDC_LNOF,309,67,8,8
+    LTEXT           "100",IDC_LTOT,320,67,38,8
+    LTEXT           "°",IDC_XVALUEUNIT,93,49,28,8
+    LTEXT           "°",IDC_YVALUEUNIT,93,66,28,8
+    PUSHBUTTON      "Set Plane",IDC_BTN_SETPLAN,82,18,50,14,WS_DISABLED
+END
+
+IDD_COMSET DIALOGEX 0, 0, 181, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Com Port Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CBPORTNO,39,18,135,15,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Port No.",IDC_STATIC,7,20,27,8
+    LTEXT           "Baud Rate",IDC_STATIC,7,39,36,10
+    COMBOBOX        IDC_CBBAUDRATE,46,35,53,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDCANCEL,124,52,50,14
+    DEFPUSHBUTTON   "Save",IDOK,72,52,50,14
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 276, 108
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ALMD Information"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "ALMD, Version 1.02",IDC_STATIC,195,7,74,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC,194,18,75,8
+    DEFPUSHBUTTON   "Ok",IDOK,219,87,50,14,WS_GROUP
+    CONTROL         IDD_STATUS,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,7,7,160,74
+    LTEXT           "DigitType",IDC_LDIGITTYPE,195,30,35,8
+END
+
+IDD_DISPUNITSET DIALOGEX 0, 0, 163, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Display mode/Unit/Go/NoGo"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,50,130,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,106,130,50,14
+    GROUPBOX        "Coordinate System",IDC_STATIC,7,43,149,43
+    CONTROL         "Pitch and Roll",IDC_RDISPTYPE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,25,58,60,10
+    CONTROL         "Magnitude and Direction",IDC_RMAGDIR,"Button",BS_AUTORADIOBUTTON,25,69,95,10
+    GROUPBOX        "Inclination type",IDC_STATIC,7,86,149,40
+    CONTROL         "Angle",IDC_RDISPUNIT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,25,98,34,10
+    CONTROL         "Rise Over Run",IDC_RROR,"Button",BS_AUTORADIOBUTTON,25,109,62,10
+    COMBOBOX        IDC_CB_KOFANGLE,90,94,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_KOFROR,90,107,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Go/No Go tolerance:",IDC_STATIC,13,19,67,8
+    EDITTEXT        IDC_EDT_TOL,88,15,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "°",IDC_LGONOGOUNIT,131,17,25,8
+    CTEXT           "Static",IDC_LGONOGO,21,32,125,8
+END
+
+IDD_ENVSETTING DIALOGEX 0, 0, 247, 71
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Environment Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,137,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,189,50,50,14
+    EDITTEXT        IDC_EDT_SAVEFOLDER,78,17,138,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_SETFOLDER,221,16,17,14
+    LTEXT           "Data Save Folder",IDC_STATIC,15,19,58,9
+    LTEXT           "Data File Name",IDC_STATIC,15,32,51,8
+    EDITTEXT        IDC_EDT_DFNAME,78,31,70,12,ES_AUTOHSCROLL
+END
+
+IDD_REPORT DIALOGEX 0, 0, 189, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Excel Report"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,80,26,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,132,26,50,14
+    PUSHBUTTON      "Load LogFile",IDC_BTNLOAD,7,7,50,14
+    LTEXT           "0",IDC_NREPORTDATA,138,13,8,8
+    LTEXT           "Report Data Count:",IDC_STATIC,71,13,64,8
+    PUSHBUTTON      "APPLY",IDC_BTN_DATAAPPLY,7,23,50,14
+    LTEXT           "(Max:7)",IDC_STATIC,151,13,27,8
+END
+
+IDD_STABILIZATION DIALOGEX 0, 0, 174, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stabilization Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,63,47,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,117,47,50,14
+    LTEXT           "Stabilization Sensitivity",IDC_STATIC,17,19,75,8
+    EDITTEXT        IDC_EDT_SESITIVITY,96,15,40,14,ES_AUTOHSCROLL
+    LTEXT           "°",IDC_STATIC,138,18,8,8
+    PUSHBUTTON      "Default",IDC_BTN_STBLZDEFAULT,15,47,37,14
+    LTEXT           "Enter the value from 0.002 to 1.000",IDC_STATIC,19,34,136,8
+END
+
+IDD_DIAGNOSIS DIALOGEX 0, 0, 258, 133
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Diagnosis"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,200,112,50,14
+    PUSHBUTTON      "Next",IDC_DIAGNEXT,143,112,50,14
+    PUSHBUTTON      "Back",IDC_DIAGPREV,86,112,50,14
+END
+
+IDD_DIAG1 DIALOGEX 0, 0, 211, 104
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "1. You need a flat, stable surface.\n\n2. Place the sensor on the surface.\n\n3. Make four marks next to the sensor's edge. \n\n4. Set the sensor 0 degree position.\n\n5. Wait for sensor stable. If the sensor is unstabled. \n\n6. Press the next button.",IDC_STATIC,7,7,197,90
+END
+
+IDD_DIAG2 DIALOGEX 0, 0, 238, 79
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "1. Set sensor 90 degree position.\n\n2. Press the next button.",IDC_STATIC,16,17,207,30
+END
+
+IDD_DIAG3 DIALOGEX 0, 0, 241, 86
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "1. Set sensor 180 degree position.\n\n2. Press the next button.",IDC_STATIC,16,17,207,30
+END
+
+IDD_DIAG4 DIALOGEX 0, 0, 262, 98
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "1. Set sensor 270 degree position.\n\n2. Press the next button.",IDC_STATIC,16,17,207,30
+    LTEXT           "Between Roll and Pitch:",IDC_RPRESULT,65,55,119,8
+    LTEXT           "Roll to Roll:",IDC_RRRESULT,65,67,119,8
+    LTEXT           "Pitch to Pitch:",IDC_PPRESULT,65,79,119,8
+    GROUPBOX        "Result",IDC_GRESULT,32,46,159,45
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_STATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 585
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_OPPANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 475
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_COMSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_DISPUNITSET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_ENVSETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_REPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_STABILIZATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_DIAGNOSIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_DIAG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_DIAG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_DIAG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_DIAG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_STATUS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VIEW AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OPPANEL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_COMSET AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DISPUNITSET AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ENVSETTING AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_REPORT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_STABILIZATION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIAGNOSIS AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIAG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIAG2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIAG3 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIAG4 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ALMDMonitor.ico"
+
+IDR_ALMDMonitorTYPE     ICON                    "res\\ALMDMonitorDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_OPENLOG
+    BUTTON      ID_LOG_SAVE
+    BUTTON      ID_FILE_DATAREPORT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPENLOG
+        MENUITEM "Save(&S)\tCtrl+S",            ID_LOG_SAVE
+        MENUITEM "&Export Excel\tCtrl+E",       ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Data Report...\tCtrl+P",     ID_FILE_DATAREPORT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Settings"
+    BEGIN
+        MENUITEM "Environment Setting",         ID_ENVSET
+        MENUITEM "Set Display Mode, Units, Go/No Go ", ID_SETDISP_MODENUNITS
+        MENUITEM "Stabilization Setting",       ID_SETTINGS_STABILIZATION
+        MENUITEM "Com Port Setting",            ID_SETTINGS_COMPORTSETTING
+        MENUITEM "Diagnosis",                   ID_DIAGNOSIS
+        MENUITEM SEPARATOR
+        MENUITEM "&About ALMD",                 ID_APP_ABOUT
+    END
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (&Blue Style)",   ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (B&lack Style)",  ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (&Silver Style)", ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (&Aqua Style)",   ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Win&dows 7",                  ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "ALMDMonitor"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ALMDMonitor.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "ALMDMonitor.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "ALMD\n\nALMD\nCSV Files(*.csv)\n.csv\nALMD.Document\nALMD.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "ALMD"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save LOG File"
+    ID_FILE_SAVE_AS         "Export CSV File"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Print the active document using current options\nQuick Print"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Exit Program"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SETDISP_MODENUNITS   "Set display Mode, Unit, Go/No Go value"
+    ID_DIAGNOSIS            "Check the sensor status"
+    ID_FILE_DATAREPORT      "Export Data Report"
+    ID_FILE_OPENLOG         "Open the log file"
+    ID_SETTINGS_STABILIZATION "Set stabilization sensitivity"
+    ID_LOG_SAVE             "Save Log File"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SETTINGS_COMPORTSETTING "Set Port, Baud Rate"
+    ID_ENVSET               "Set Folder, File name"
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "res\ALMDMonitor.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#include "afxprint.rc"    // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,6 @@
+; Matrox.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Matrox"
+
+EXPORTS
+    ; Explicit exports can go here
